@@ -11,9 +11,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Anthony", "Anthony", "{C083
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Design Patterns", "Design Patterns", "{05EFBB60-2860-479F-8881-E2733AC57760}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observer", "Observer\Observer.csproj", "{05BBBD13-273F-4CE0-96E6-0B5F8A37A4EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Observer", "Observer\Observer.csproj", "{05BBBD13-273F-4CE0-96E6-0B5F8A37A4EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "200305-Trader", "200305-Trader\200305-Trader.csproj", "{F4823771-E147-47E4-8592-AFB7C20AC76C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "200305-Trader", "200305-Trader\200305-Trader.csproj", "{F4823771-E147-47E4-8592-AFB7C20AC76C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
