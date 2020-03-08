@@ -1,7 +1,7 @@
 ﻿using System;
 using static Simple_IO.AskData;
 
-namespace _200305_Trader
+namespace _200305_Exo01_Trader
 {
     class Program
     {

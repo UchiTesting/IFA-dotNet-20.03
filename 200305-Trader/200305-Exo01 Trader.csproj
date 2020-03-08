@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>_200305_Trader</RootNamespace>
+    <RootNamespace>_200305_Exo01_Trader</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
