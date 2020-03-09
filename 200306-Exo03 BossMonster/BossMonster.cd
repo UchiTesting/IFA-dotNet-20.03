@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="_200306_Exo03_BossMonster.Objects.Assets.Dungeon">
+    <Position X="9.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAQQAAAgAAAAAAIUIACAAAAABAAAAA=</HashCode>
+      <FileName>Objects\Assets\Dungeon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_200306_Exo03_BossMonster.Objects.Assets.PackOfHeroes">
+    <Position X="12.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAQAAAA=</HashCode>
+      <FileName>Objects\Assets\PackOfHeroes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_200306_Exo03_BossMonster.Objects.Assets.Town">
+    <Position X="11" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\Assets\Town.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_200306_Exo03_BossMonster.Objects.Cards.AbstractCard" Collapsed="true">
+    <Position X="4" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\Cards\AbstractCard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_200306_Exo03_BossMonster.Objects.Cards.AbstractDeck" Collapsed="true">
+    <Position X="0.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAgAAAAAAAAAAAgAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\Cards\AbstractDeck.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_200306_Exo03_BossMonster.Objects.Cards.AttackingCard" Collapsed="true">
+    <Position X="3" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\Cards\AttackingCard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_200306_Exo03_BossMonster.Objects.Cards.BossCard" Collapsed="true">
+    <Position X="0.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\Cards\BossCard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_200306_Exo03_BossMonster.Objects.Cards.HeroCard" Collapsed="true">
+    <Position X="3" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\Cards\HeroCard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_200306_Exo03_BossMonster.Objects.Cards.RoomCard" Collapsed="true">
+    <Position X="5.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\Cards\RoomCard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_200306_Exo03_BossMonster.Objects.Cards.RoomDeck" Collapsed="true">
+    <Position X="0.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABIAAAAAAAAAAAAAgAAAAAAAAAAABAAAQAAAAAAAA=</HashCode>
+      <FileName>Objects\Cards\RoomDeck.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_200306_Exo03_BossMonster.Objects.Cards.SpellCard" Collapsed="true">
+    <Position X="7.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\Cards\SpellCard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="_200306_Exo03_BossMonster.Enums.DeckNumber" Collapsed="true">
+    <Position X="12.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgABAAAAAAAAAAAAgAAAAUAAAAA=</HashCode>
+      <FileName>Enums\DeckNumber.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="_200306_Exo03_BossMonster.Enums.EffectTypes" Collapsed="true">
+    <Position X="11" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAgAgAAAAAIAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Enums\EffectTypes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="_200306_Exo03_BossMonster.Enums.HeroTypes" Collapsed="true">
+    <Position X="12.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAQgAAAAAAAAAAAAAABAAAAAACAA=</HashCode>
+      <FileName>Enums\HeroTypes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="_200306_Exo03_BossMonster.Enums.Phases" Collapsed="true">
+    <Position X="11" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAQAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enums\Phases.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
