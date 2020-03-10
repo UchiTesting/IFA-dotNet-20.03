@@ -5,21 +5,21 @@ using System.Text;
 
 namespace _200303_Pokemon.Exceptions
 {
-    class CannotAttackDeadEnemyException : Exception
+    class CannotRemoveHP_OnDeadEnemyException : Exception
     {
-        public CannotAttackDeadEnemyException()
+        public CannotRemoveHP_OnDeadEnemyException()
         {
         }
 
-        public CannotAttackDeadEnemyException(string message) : base(message)
+        public CannotRemoveHP_OnDeadEnemyException(string message) : base(message)
         {
         }
 
-        public CannotAttackDeadEnemyException(string message, Exception innerException) : base(message, innerException)
+        public CannotRemoveHP_OnDeadEnemyException(string message, Exception innerException) : base(message, innerException)
         {
         }
 
-        protected CannotAttackDeadEnemyException(SerializationInfo info, StreamingContext context) : base(info, context)
+        protected CannotRemoveHP_OnDeadEnemyException(SerializationInfo info, StreamingContext context) : base(info, context)
         {
         }
     }
