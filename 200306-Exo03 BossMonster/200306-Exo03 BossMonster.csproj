@@ -6,4 +6,17 @@
     <RootNamespace>_200306_Exo03_BossMonster</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Simple IO">
+      <HintPath>..\..\libs\UT_UtilityClasses\Uchitesting Utility Classes\Simple IO\bin\Debug\netstandard2.0\Simple IO.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

@@ -15,8 +15,9 @@ namespace _200306_Exo03_BossMonster.Objects.Assets
         protected RoomDeck Deck3;
         protected RoomDeck Deck4;
         protected BossCard Boss;
-        PackOfHeroes DeadHeroes;
-        PackOfHeroes CompletedHeroes;
+        PackOfHeroes BrowsingHeroes; // Heroes in the Dungeon
+        PackOfHeroes DeadHeroes; // Heroes defeated
+        PackOfHeroes CompletedHeroes; // Heroes who completed the dungeon.s
 
         public Dungeon(BossCard boss)
         {
@@ -54,7 +55,35 @@ namespace _200306_Exo03_BossMonster.Objects.Assets
 
             if (CheckRightDeckInitiated(deckNumber))
                 tmpDeck.AddCard(c);
-            else throw new DeckEmptyException("The deck on the right cannot be empty before you stack a card on the current one.");
+            else
+                CompactDungeon();
+        }
+
+        private void CompactDungeon()
+        {
+            bool Deck1HasCards = Deck1.GetRoomsStackedNumber() > 0;
+            bool Deck2HasCards = Deck2.GetRoomsStackedNumber() > 0;
+            bool Deck3HasCards = Deck3.GetRoomsStackedNumber() > 0;
+            bool Deck4HasCards = Deck4.GetRoomsStackedNumber() > 0;
+
+            if (Deck3HasCards && !Deck4HasCards)
+                MoveDeck(Deck3, Deck4);
+
+            if (Deck2HasCards && !Deck3HasCards)
+                MoveDeck(Deck2, Deck3);
+
+            if (Deck1HasCards && !Deck2HasCards)
+                MoveDeck(Deck1, Deck2);
+        }
+
+        private void MoveDeck(RoomDeck source, RoomDeck destination)
+        {
+            if (destination.GetRoomsStackedNumber() < 1)
+            {
+                destination = source;
+                source.EmptyDeck();
+                CompactDungeon();
+            }
         }
 
         public bool CheckRightDeckInitiated(DeckNumber deckNumber)

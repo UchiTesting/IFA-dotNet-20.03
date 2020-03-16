@@ -24,5 +24,11 @@ namespace _200306_Exo03_BossMonster.Objects.Assets
         }
 
         // Create a method that computes the total atk or number of heroes in order to count the scores
+        public int GetTotalAtk()
+        {
+            int result = 0;
+            heroes.ForEach(h => result += h.Atk);
+            return result;
+        }
     }
 }

@@ -33,6 +33,13 @@ namespace _200306_Exo03_BossMonster.Objects.Cards
             else throw new DeckEmptyException("Cannot remove a card from an empty deck.");
         }
 
+        public void PutCardUnderDeck(RoomCard c)
+        {
+            cards.Insert(0, c);
+        }
+
         public int GetRoomsStackedNumber() { return cards.Count; }
+
+        public override void EmptyDeck() { base.EmptyDeck(); }
     }
 }

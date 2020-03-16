@@ -8,19 +8,26 @@ namespace _200306_Exo03_BossMonster.Objects.Cards
     {
         protected List<AbstractCard> cards;
 
-        protected virtual void AddCard(AbstractCard c)
+        public virtual void AddCard(AbstractCard c)
         {
             cards.Add(c);
         }
 
-        protected virtual void AddCards(List<AbstractCard> c)
+        public virtual void AddCards(List<AbstractCard> c)
         {
             cards.AddRange(c);
         }
 
-        protected virtual void RemoveTopCard()
+        public virtual void RemoveTopCard()
         {
             cards.RemoveAt(cards.Count-1);
         }
+
+        public virtual void PutCardUnderDeck(AbstractCard c)
+        {
+            cards.Insert(0, c);
+        }
+
+        public virtual void EmptyDeck() { cards.Clear(); }
     }
 }
