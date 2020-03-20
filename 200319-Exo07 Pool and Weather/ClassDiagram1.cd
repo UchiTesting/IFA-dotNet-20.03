@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="_200319_Exo07_Pool_and_Weather.Objects.AbstractFlowing">
+    <Position X="2.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\AbstractFlowing.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_200319_Exo07_Pool_and_Weather.Objects.FlowEventArgs">
+    <Position X="7.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\FlowEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_200319_Exo07_Pool_and_Weather.Objects.Pool">
+    <Position X="9.25" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAIAAAAACgACAAAQAgAAACgIABAAAAAA=</HashCode>
+      <FileName>Objects\Pool.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="_200319_Exo07_Pool_and_Weather.Objects.Pump">
+    <Position X="0.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAgA=</HashCode>
+      <FileName>Objects\Pump.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="_200319_Exo07_Pool_and_Weather.Objects.Tap">
+    <Position X="2.75" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIQAAIAAAAAAAAAAAAAAAAAAQAAAABACAAgA=</HashCode>
+      <FileName>Objects\Tap.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="_200319_Exo07_Pool_and_Weather.Objects.Weather">
+    <Position X="5" Y="5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AgAACAAAAAAAAAAAABAAAAAAAAABAAAAEAAAAAACAAA=</HashCode>
+      <FileName>Objects\Weather.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="_200319_Exo07_Pool_and_Weather.Interfaces.PoolListener" Collapsed="true">
+    <Position X="11.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAgA=</HashCode>
+      <FileName>Interfaces\PoolListener.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="_200319_Exo07_Pool_and_Weather.Interfaces.PumpListener" Collapsed="true">
+    <Position X="13" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\PumpListener.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="_200319_Exo07_Pool_and_Weather.Interfaces.TapListener" Collapsed="true">
+    <Position X="11.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\TapListener.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="_200319_Exo07_Pool_and_Weather.Interfaces.WeatherListener" Collapsed="true">
+    <Position X="13" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\WeatherListener.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="_200319_Exo07_Pool_and_Weather.Enums.VolumeChangerStateEnum" Collapsed="true">
+    <Position X="6.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AKAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enums\VolumeChangerState.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="_200319_Exo07_Pool_and_Weather.Enums.WeatherEnum" Collapsed="true">
+    <Position X="8.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAIAQAAAAAAAAAABAABAAAAAAAAAAA=</HashCode>
+      <FileName>Enums\WeatherEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
