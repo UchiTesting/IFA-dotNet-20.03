@@ -23,7 +23,7 @@ namespace _200303_Pokemon
             do
             {
                 RefreshDisplay();
-                choice = askChar("Please select a pokemon: ");
+                choice = AskChar("Please select a pokemon: ");
                 try
                 {
                     switch (choice)
@@ -41,12 +41,11 @@ namespace _200303_Pokemon
                 catch (CannotAttackDeadEnemyException)
                 {
                     Console.WriteLine("\nCannot attack a dead enemy.");
-                    //return;
                 }
                 finally { WinnerExists = CheckWinner(); }
                 
                 
-            } while (choice != '0' || WinnerExists);
+            } while (choice != '0' && !WinnerExists);
         }
 
         private static bool CheckWinner()
