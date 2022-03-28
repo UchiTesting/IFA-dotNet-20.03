@@ -11,19 +11,16 @@ namespace _200316_Exo05_Chest_Event
         public ChestListener(Chest _chest)
         {
             chest = _chest;
-            chest.foundCodeEvent += OnFoundCodeEvent;
-            chest.maxAttemptsEvent += OnMaxAttemptsEvent;
+            chest.FoundCodeEvent += OnFoundCodeEvent;
+            chest.MaxAttemptsEvent += OnMaxAttemptsEvent;
         }
 
-        public void OnFoundCodeEvent(Chest c)
+        public void OnFoundCodeEvent(Chest c) => Console.WriteLine("Chest code found ! Secret code was {0}", c.GetCode());
+
+        public void OnMaxAttemptsEvent(Chest c) 
         {
-            Console.WriteLine("Chest code found ! Secret code was {0}", c.getCode());
-        }
-
-        public void OnMaxAttemptsEvent(Chest c) {
-
             Console.WriteLine("Exceeded max attempts!");
-            Console.WriteLine("Chest lock state {0}", c.getLockState());
+            Console.WriteLine("Chest lock state {0}", c.GetLockState());
         }
     }
 }

@@ -16,9 +16,9 @@ namespace _200316_Exo05_Chest_Event
 
             do
             {
-                int attempt = askInt("Please input a code to try: ");
+                int attempt = AskInt("Please input a code to try: ");
                 myChest.TryCode(attempt);
-            } while (!myChest.getLockState() && !myChest.getFoundState());
+            } while (!myChest.GetLockState() && !myChest.GetFoundState());
         }
     }
 }
