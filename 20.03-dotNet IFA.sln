@@ -1,7 +1,6 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29806.167
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "200303-Exo 01 Pokemon", "200303-Pokemon\200303-Exo 01 Pokemon.csproj", "{D95B7E16-E576-49F5-9AB9-BE4C1BA20943}"
 EndProject
@@ -21,11 +20,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "200316-Exo04 Events", "2003
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "200316-Exo05 Chest Event", "200316-Exo05 Chest Event\200316-Exo05 Chest Event.csproj", "{8C22195D-440F-4E77-8C63-5BA52363D869}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "200319-Exo07 Pool and Weather", "200319-Exo07 Pool and Weather\200319-Exo07 Pool and Weather.csproj", "{283F412F-09D7-4246-9ACC-4277263E7F0D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "200319-Exo07 Pool and Weather", "200319-Exo07 Pool and Weather\200319-Exo07 Pool and Weather.csproj", "{283F412F-09D7-4246-9ACC-4277263E7F0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "200320-Exo08 Fibo Event", "200320-Exo08 Fibo Event\200320-Exo08 Fibo Event.csproj", "{E1CEB9B9-783E-4D54-8E0B-482451A41576}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "200320-Exo08 Fibo Event", "200320-Exo08 Fibo Event\200320-Exo08 Fibo Event.csproj", "{E1CEB9B9-783E-4D54-8E0B-482451A41576}"
 EndProject
-
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "200319-Exo06 Humans and Phones Event", "200319-Exo06 Humans and Phones Event\200319-Exo06 Humans and Phones Event.csproj", "{B88F48F1-B54F-4477-B3AA-318030A7670D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -64,6 +64,10 @@ Global
 		{E1CEB9B9-783E-4D54-8E0B-482451A41576}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1CEB9B9-783E-4D54-8E0B-482451A41576}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1CEB9B9-783E-4D54-8E0B-482451A41576}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B88F48F1-B54F-4477-B3AA-318030A7670D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B88F48F1-B54F-4477-B3AA-318030A7670D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B88F48F1-B54F-4477-B3AA-318030A7670D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B88F48F1-B54F-4477-B3AA-318030A7670D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -77,6 +81,7 @@ Global
 		{8C22195D-440F-4E77-8C63-5BA52363D869} = {47233EC6-3E78-42B2-86D5-A92B8B0BADD8}
 		{283F412F-09D7-4246-9ACC-4277263E7F0D} = {47233EC6-3E78-42B2-86D5-A92B8B0BADD8}
 		{E1CEB9B9-783E-4D54-8E0B-482451A41576} = {47233EC6-3E78-42B2-86D5-A92B8B0BADD8}
+		{B88F48F1-B54F-4477-B3AA-318030A7670D} = {47233EC6-3E78-42B2-86D5-A92B8B0BADD8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ADE6DF2C-5AFA-4C25-8B3C-EFAB3042D7D8}

@@ -11,25 +11,23 @@ namespace _200306_Exo02_Humans_and_Phones
             Console.WriteLine("Ex 2 : Humans and Phones");
 
             // Setting up humans
-            List<AbstractObserver> humans = new List<AbstractObserver>();
-            Human Devon = new Human("Devon");
-            Human John = new Human("John");
-            Human Alice = new Human("Alice");
-            humans.Add(Alice);
-            humans.Add(Devon);
-            humans.Add(John);
+            List<AbstractObserver> humans = PopulateHumans();
+
+            Human Alice = (Human)humans[0];
+            Human Devon = (Human)humans[1];
+            Human John = (Human)humans[2];
 
             // Setting up phones
-            List<Phone> phones = new List<Phone>();
-            Phone Samsung = new Phone("Samsung");
-            Samsung.AddObservers(humans);
-            Phone Apple = new Phone("Apple");
-            Apple.AddObservers(humans);
-            Phone Playskool = new Phone("Playskool");
-            Playskool.AddObservers(humans);
-            phones.Add(Apple);
-            phones.Add(Playskool);
-            phones.Add(Samsung);
+            List<AbstractObservable> phones = PopulatePhones();
+
+            Phone Apple = (Phone)phones[0];
+            Phone Playskool = (Phone)phones[1];
+            Phone Samsung = (Phone)phones[2];
+
+            phones.ForEach(phone =>
+            {
+                phone.AddObservers(humans);
+            });
 
             //Adding Phones to Humans
             Devon.AddPhone(Apple);
@@ -41,8 +39,7 @@ namespace _200306_Exo02_Humans_and_Phones
             do
             {
                 checkInput(ref stop);
-                phones.ForEach(p => p.Ring());
-
+                phones.ForEach(p => (p as Phone).Ring());
             } while (!stop);
         }
 
@@ -58,5 +55,19 @@ namespace _200306_Exo02_Humans_and_Phones
                     stop = true;
             }
         }
+
+        private static List<AbstractObserver> PopulateHumans() =>
+            new List<AbstractObserver> {
+                new Human("Alice"),
+                new Human("Devon"),
+                new Human("John")
+            };
+
+        private static List<AbstractObservable> PopulatePhones() =>
+            new List<AbstractObservable> {
+                new Phone("Apple"),
+                new Phone("Playskool"),
+                new Phone("Samsung")
+            };
     }
 }
