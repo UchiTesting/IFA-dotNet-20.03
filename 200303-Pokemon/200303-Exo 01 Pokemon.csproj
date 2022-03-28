@@ -2,13 +2,13 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <RootNamespace>_200303_Pokemon</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="Simple IO">
-      <HintPath>..\..\libs\UT_UtilityClasses\Uchitesting Utility Classes\Simple IO\bin\Debug\netstandard2.0\Simple IO.dll</HintPath>
+    <Reference Include="Simple_IO">
+      <HintPath>..\..\libs\UT_UtilityClasses\Uchitesting Utility Classes\Simple IO\bin\Debug\net6.0\Simple_IO.dll</HintPath>
     </Reference>
   </ItemGroup>
 
