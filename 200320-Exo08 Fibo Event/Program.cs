@@ -18,39 +18,25 @@ namespace _200320_Exo08_Fibo_Event
 
     class Program
     {
-        public static event EventHandler<FiboArgs> threadFinishedEvent;
+        public static event EventHandler<FiboArgs> ThreadFinishedEvent;
         static void Main(string[] args)
         {
             int N;
             MenuActionEnum choix = MenuActionEnum.NONE;
             List<Thread> threads = new List<Thread>();
-            //DisplayFiboEnd dfe = new DisplayFiboEnd();
 
-            threadFinishedEvent += DisplayFiboEnd.OnThreadFinishedEvent;
+            ThreadFinishedEvent += DisplayFiboEnd.OnThreadFinishedEvent;
 
             while (choix != MenuActionEnum.QUITTER)
             {
-                Console.WriteLine("Quelle version ?");
-                Console.WriteLine("1) Normal");
-                Console.WriteLine("2) Optimisée");
-                Console.WriteLine("3) Quitter");
-                choix = (MenuActionEnum)askInt("Choix: ");
+                DisplayMenu();
+                choix = (MenuActionEnum)AskInt("Choix: ");
 
                 if (choix == MenuActionEnum.FIBONORMAL)
-                {
-                    N = askInt("Valeur n de fibo: ");
-                    Thread t = new Thread(FiboNormalThread);
-                    threads.Add(t);
-                    t.Start(N);
-                }
+                    SetupAndRunFibo(threads, FiboNormalThread);
 
                 if (choix == MenuActionEnum.FIBOOOPTIMISE)
-                {
-                    N = askInt("Valeur n de fibo: ");
-                    Thread t = new Thread(FiboOptiThread);
-                    threads.Add(t);
-                    t.Start(N);
-                }
+                    SetupAndRunFibo(threads, FiboOptiThread);
             }
 
             Console.WriteLine("En attente des threads..");
@@ -60,6 +46,22 @@ namespace _200320_Exo08_Fibo_Event
             }
             Console.WriteLine("Threads finis, on peut quitter");
 
+        }
+
+        private static void SetupAndRunFibo(List<Thread> threads, ParameterizedThreadStart fiboToRun)
+        {
+            int N = AskInt("Valeur n de fibo: ");
+            Thread t = new Thread(fiboToRun);
+            threads.Add(t);
+            t.Start(N);
+        }
+
+        private static void DisplayMenu()
+        {
+            Console.WriteLine("Quelle version ?");
+            Console.WriteLine("1) Normal");
+            Console.WriteLine("2) Optimisée");
+            Console.WriteLine("3) Quitter");
         }
 
         static void FiboNormalThread(object n)
@@ -72,7 +74,7 @@ namespace _200320_Exo08_Fibo_Event
             fa.result = Fibo(fa.n);
             execTime.Stop();
             Console.WriteLine("Execution time = " + execTime.ElapsedMilliseconds);
-            threadFinishedEvent(null, fa);
+            ThreadFinishedEvent(null, fa);
         }
         static BigInteger Fibo(int n)
         {
@@ -91,14 +93,12 @@ namespace _200320_Exo08_Fibo_Event
             fa.result = FiboOpti(fa.n, ref tabFiboOpti);
             execTime.Stop();
             Console.WriteLine("Execution time = " + execTime.ElapsedMilliseconds);
-            threadFinishedEvent(null, fa);
+            ThreadFinishedEvent(null, fa);
         }
         static BigInteger FiboOpti(int n, ref BigInteger[] tab)
         {
             if (tab[n] == 0)
-            {
                 tab[n] = n <= 1 ? n : FiboOpti(n - 1, ref tab) + FiboOpti(n - 2, ref tab);
-            }
 
             return tab[n];
         }

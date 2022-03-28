@@ -10,7 +10,7 @@ namespace _200320_Exo08_Fibo_Event
         {
             DateTime timestamp = DateTime.Now;
 
-            Console.WriteLine("{0}: Finished to compute Fibo for N={1}. Result: {2}", timestamp, fa.n,fa.result);
+            Console.WriteLine($"{timestamp}: Finished to compute Fibo for N={fa.n}. Result: {fa.result}");
         }
     }
 }
